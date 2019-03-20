@@ -29,7 +29,7 @@ class App extends Component {
   search = () => {
     if (!this.state.term) return;
     this.setState({ loading: true });
-    fetch(`http://localhost:3000/search?term=${this.state.term}`)
+    fetch(`https://tide-search-backend.herokuapp.com/search?term=${this.state.term}`)
       .then(res => res.json())
       .then((data) => {
         const notFound = data[1].length === 0 ? true : false;
