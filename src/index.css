@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.results {
+  margin-top: 5px;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+#loader {
+  margin-top: 30px;
+}
