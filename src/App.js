@@ -51,6 +51,7 @@ class App extends Component {
   handleKeyPress= (target) => {
     if (target.charCode === 13){
       this.search();
+      this.props.history.push(this.state.term);
     }
   }
 
